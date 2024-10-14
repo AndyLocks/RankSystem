@@ -1,0 +1,26 @@
+spring:
+  main:
+    web-application-type: none
+  application:
+    name: rank_system.bot
+  kafka:
+    bootstrap-servers: "kafka:9092"
+
+logging:
+  level:
+    root: info
+  file:
+    name: bot.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5000000
+
+redis:
+  host: localhost
+  port: 6379
+
+kafka:
+  host: "kafka:9092"
+
+api:
+  host: http://nginx:80
