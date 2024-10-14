@@ -1,4 +1,4 @@
-This project is part of [another project.](https://github.com/AndyLocks/RankSystem)
+**This project is part of [another project.](https://github.com/AndyLocks/RankSystem)**
 # Rank system bot
 ## Description
 It's a bot microservice. It is the main way of communication with the application. It also counts points, gives rewards and sends notifications.
