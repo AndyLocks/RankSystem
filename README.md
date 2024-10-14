@@ -1,4 +1,4 @@
-# Rank system
+# Rank system bot
 ## Description
 It's a bot microservice. It is the main way of communication with the application. It also counts points, gives rewards and sends notifications.
 ## Commands
