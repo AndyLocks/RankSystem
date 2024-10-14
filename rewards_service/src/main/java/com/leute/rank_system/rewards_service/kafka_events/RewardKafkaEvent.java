@@ -82,7 +82,7 @@ public class RewardKafkaEvent {
 
         LOG.info("Current points: {}, New Points: {}", oldPoints, newPoints);
 
-        for (var rewardGoalCache : getAllRewards(message.guildId()).stream()
+        for (var rewardGoalCache : getAllRewardGoals(message.guildId()).stream()
                 .filter(rewardGoalCache -> rewardGoalCache.points() > oldPoints &&
                         rewardGoalCache.points() <= newPoints)
                 .toList()) {
@@ -136,28 +136,29 @@ public class RewardKafkaEvent {
      * @param guildId discord guild id
      * @return list of rewards
      */
-    private List<RewardGoalCache> getAllRewards(String guildId) {
+    private List<RewardGoalCache> getAllRewardGoals(String guildId) {
 
         if (guildRewardGoalsCacheRepository.existsById(guildId)) {
-            return guildRewardGoalsCacheRepository.findById(guildId).get().getGoals();
+            var goals = guildRewardGoalsCacheRepository.findById(guildId).get().getGoals();
+            return goals == null ? List.of() : goals;
         } else {
-            var rewards = rewardsGoalsRepo.findAll(
+            var rewardGoals = rewardsGoalsRepo.findAll(
                             Example.of(
                                     new RewardGoal(null, guildId, null, null, null),
                                     ExampleMatcher.matching()
                                             .withIgnoreNullValues()
                             )
                     ).stream()
-                    .map(rewardGoals -> new RewardGoalCache(
-                            rewardGoals.getGuildId(),
-                            rewardGoals.getType(),
-                            rewardGoals.getReward(),
-                            rewardGoals.getPoints())
+                    .map(goals -> new RewardGoalCache(
+                            goals.getGuildId(),
+                            goals.getType(),
+                            goals.getReward(),
+                            goals.getPoints())
                     ).toList();
 
-            guildRewardGoalsCacheRepository.save(new GuildRewardGoalsCache(guildId, rewards));
+            guildRewardGoalsCacheRepository.save(new GuildRewardGoalsCache(guildId, rewardGoals));
 
-            return rewards;
+            return rewardGoals;
         }
     }
 
