@@ -5,7 +5,7 @@ services:
     container_name: points-service
     restart: always
     build:
-      context: ./rank_system.points_service/
+      context: ./points_service/
       dockerfile: Dockerfile
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/test
@@ -23,7 +23,7 @@ services:
     container_name: rewards-service
     restart: always
     build:
-      context: ./rank_system.rewards_service/
+      context: ./rewards_service/
       dockerfile: Dockerfile
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/test
@@ -38,7 +38,7 @@ services:
     container_name: manager-service
     restart: always
     build:
-      context: ./rank_system.manager/
+      context: ./manager/
       dockerfile: Dockerfile
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/test
@@ -53,7 +53,7 @@ services:
     container_name: bot-container
     restart: always
     build:
-      context: ./rank_system.bot/
+      context: ./bot/
       dockerfile: Dockerfile
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/test
