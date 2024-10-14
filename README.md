@@ -1,8 +1,14 @@
-[![gpl](https://img.shields.io/badge/gpl-yellow?style=for-the-badge&label=license&labelColor=black)](https://github.com/AndyLocks/LegoTehSet/blob/master/LICENSE)
-[![discord](https://img.shields.io/badge/discord-blue?style=for-the-badge&logo=discord&logoColor=white&labelColor=black)]()
-[![JDA](https://img.shields.io/badge/JDA-purple?style=for-the-badge&logo=discord&logoColor=white&labelColor=black)](https://github.com/discord-jda/JDA)
+[![gpl](https://img.shields.io/badge/gpl-fab387?style=for-the-badge&label=license&labelColor=black)](https://github.com/AndyLocks/LegoTehSet/blob/master/LICENSE)
+[![discord](https://img.shields.io/badge/discord-89b4fa?style=for-the-badge&logo=discord&logoColor=white&labelColor=black)]()
+[![JDA](https://img.shields.io/badge/JDA-cba6f7?style=for-the-badge&logo=discord&logoColor=white&labelColor=black)](https://github.com/discord-jda/JDA)
 
-[![invite](https://img.shields.io/badge/Bot-red?style=for-the-badge&logoColor=white&label=Invite&labelColor=black)](https://discord.com/oauth2/authorize?client_id=1114974604784578590)
+[![invite](https://img.shields.io/badge/Bot-f9e2af?style=for-the-badge&logoColor=white&label=Invite&labelColor=black)](https://discord.com/oauth2/authorize?client_id=1114974604784578590)
+
+# All microservices
+[![Bot](https://img.shields.io/badge/Bot-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=black)](https://github.com/AndyLocks/rank_system.bot)
+[![Points Service](https://img.shields.io/badge/Points_service-fab387?style=for-the-badge&logo=github&logoColor=white&labelColor=black)](https://github.com/AndyLocks/rank_system.points_service)
+[![Rewards service](https://img.shields.io/badge/Rewards_service-a6e3a1?style=for-the-badge&logo=github&logoColor=white&labelColor=black)](https://github.com/AndyLocks/rank_system.rewards_service)
+[![Manager](https://img.shields.io/badge/Manager-f38ba8?style=for-the-badge&logo=github&logoColor=white&labelColor=black)](https://github.com/AndyLocks/rank_system.manager)
 
 # Rank System
 ## Description
