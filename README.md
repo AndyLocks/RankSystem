@@ -18,16 +18,16 @@ It can also be a link to the Rank system API for a cooler reward.
 
 ---
 
-### Bot
+### [Bot](https://github.com/AndyLocks/rank_system.bot)
 It's a bot microservice. It is the main way of communication with the application. It also counts points, gives rewards and sends notifications to a member.
 
-### Points service
+### [Points service](https://github.com/AndyLocks/rank_system.points_service)
 Processes all the points that the bot sends.
 
-### Rewards service
+### [Rewards service](https://github.com/AndyLocks/rank_system.rewards_service)
 Processes the points and decides what awards will be given out. Also sends a notification to the bot.
 
-### Manager
+### [Manager](https://github.com/AndyLocks/rank_system.manager)
 This is the main api for managing the service.
 
 ### Kafka
@@ -36,7 +36,7 @@ This is the main api for managing the service.
 These are all the notifications to be sent by the bot. Users receive notifications directly into a private chat with the bot.
 
 #### Points
-Points earned by users that need to be processed.
+Points earned by users that need to be processed.https://github.com/AndyLocks/rank_system.manager
 
 #### Points for rewards service
 This topic is for points consumption by `rewards service`.
