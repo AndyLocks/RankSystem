@@ -18,11 +18,6 @@ It can also be a link to the Rank system API for a cooler reward.
 
 ---
 
-## Docker compose etaps
-![Docker compose etaps](./Docker_compose_etaps.png)
-
----
-
 ### [Bot](https://github.com/AndyLocks/rank_system.bot)
 It's a bot microservice. It is the main way of communication with the application. It also counts points, gives rewards and sends notifications to a member.
 
@@ -87,6 +82,11 @@ All rewards to be given to users.
 > `points` - points for which you can get a link
 
 ![New url reward goal](./New_url_reward_goal.png)
+
+## Docker compose etaps
+![Docker compose etaps](./Docker_compose_etaps.png)
+
+---
 
 ## Invite the bot
 [Invite](https://discord.com/oauth2/authorize?client_id=1114974604784578590)
