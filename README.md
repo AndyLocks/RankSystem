@@ -36,7 +36,7 @@ This is the main api for managing the service.
 These are all the notifications to be sent by the bot. Users receive notifications directly into a private chat with the bot.
 
 #### Points
-Points earned by users that need to be processed.https://github.com/AndyLocks/rank_system.manager
+Points earned by users that need to be processed.
 
 #### Points for rewards service
 This topic is for points consumption by `rewards service`.
@@ -55,7 +55,7 @@ All rewards to be given to users.
 `/new_role_goal` - Create a new award
 
 > `role` - a discord role
-
+> 
 > `points` - points for which you can get a role
 
 `\rank` - Show a list of points
@@ -71,11 +71,11 @@ All rewards to be given to users.
 ## Build and run
 ### Clone this repository
 ```shell
-git clone --recurse-submodules https://github/AndyLocks/RankSystem
+git clone https://github/AndyLocks/RankSystem
 ```
 
 ### Configuration
-1. Rename `.env.example` to `.env`
+1. Rename `./bot/.env.example` to `./bot/.env`
 2. Write a discord bot token in the `TOKEN` column
 
    Example: `TOKEN=asSkDSfjwDebt.AbobAkdkjdOnbwdslkfjwelkhfgnkoAJSsdDasdWdHKPjsdkfhn.LKDSJlksdflkjDFlksdjf`
