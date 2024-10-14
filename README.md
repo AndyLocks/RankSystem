@@ -14,7 +14,12 @@ The link could be to a secret youtube video accessible only through a link or a 
 It can also be a link to the Rank system API for a cooler reward.
 
 ## Structure
-![](./Rank_system.png)
+![Rank system](./Rank_system.png)
+
+---
+
+## Docker compose etaps
+![Docker compose etaps](./Docker_compose_etaps.png)
 
 ---
 
