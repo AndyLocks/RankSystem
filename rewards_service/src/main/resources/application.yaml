@@ -1,0 +1,37 @@
+spring:
+  application:
+  name: rank_system.rewards_service
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/test
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: "kafka:9092"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    root: info
+  file:
+    name: rewards_service.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5000000
+
+server:
+  port: 8082
+
+redis:
+  host: localhost
+  port: 6379
+
+kafka:
+  host: "kafka:9092"
