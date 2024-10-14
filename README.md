@@ -54,8 +54,16 @@ All rewards to be given to users.
 ## Commands
 `/goals` - Show a list of awards
 
+![Goals command](./Goals_command.png)
+
+---
+
 `/delete_reward_goal` - Delete a reward goal by id
 > `id` - reward goal id
+
+![Delete reward goal](./Delete_reward_goal.png)
+
+---
 
 `/new_role_goal` - Create a new award
 
@@ -63,12 +71,22 @@ All rewards to be given to users.
 > 
 > `points` - points for which you can get a role
 
+![New role reward goal](./New_role_goal.png)
+
+---
+
 `\rank` - Show a list of points
+
+![Rank](./Rank_command.png)
+
+---
 
 `\new_url_goal` - Create a new award
 > `url` - Link as a reward. It can be a YouTube video accessible only by link or an invitation to a secret discord server.
 > 
 > `points` - points for which you can get a link
+
+![New url reward goal](./New_url_reward_goal.png)
 
 ## Invite the bot
 [Invite](https://discord.com/oauth2/authorize?client_id=1114974604784578590)
