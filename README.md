@@ -1,3 +1,4 @@
+**This project is part of [another project.](https://github.com/AndyLocks/RankSystem)**
 # Rewards Service
 ## Description
 Processes the points and decides what awards will be given out. Also sends a notification to the bot.
